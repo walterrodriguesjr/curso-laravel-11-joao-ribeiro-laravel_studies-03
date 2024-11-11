@@ -16,4 +16,9 @@ class MainController extends Controller
     {
         echo "about";
     }
+
+    public function mostrarValores($valor1, $valor2)
+    {
+        echo "Valor enviado pela route: $valor1 e $valor2";
+    }
 }
