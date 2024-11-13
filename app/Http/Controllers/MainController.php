@@ -6,8 +6,18 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function teste($value)
+    public function index()
     {
-        echo "A string final é: " . $this->cleanupperCaseString($value);
+        echo "<p>Index</p>";
+    }
+
+    public function about()
+    {
+        echo "<p>About</p>";
+    }
+
+    public function contact()
+    {
+        echo "<p>Contact</p>";
     }
 }
