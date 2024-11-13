@@ -2,28 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function index()
+    public function initMethod(): string
     {
-        echo "index";
+        return "Hello World";
     }
 
-    public function about()
+    public function viewPage(): View
     {
-        echo "about";
-    }
-
-    public function mostrarValor()
-    {
-        echo "testando";
-    }
-
-    public function mostrarValores($valor1, $valor2)
-    {
-        echo "Valor enviado pela route: $valor1 e $valor2";
+        return view('home');
     }
 }
