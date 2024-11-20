@@ -14,7 +14,5 @@
 @endsection
 
 @section('bottom_bar')
-
     <p>Conteúdo da barra de rodapé</p>
-
 @endsection
