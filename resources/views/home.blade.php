@@ -1,6 +1,9 @@
 @extends('layouts.main_layout')
+
+@section('page_title', 'Home Page')
+
 @section('content')
 
-<p class="display-6 text-secondary text-center py-5">CONTENT</p>
+    <p>Conteúdo da minha View</p>
 
 @endsection
