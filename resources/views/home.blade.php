@@ -1,13 +1,13 @@
 @extends('layouts.main_layout')
 
-@section('page_title', 'Home Page')
-
 @section('content')
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col card p-5 bg-secondary text-center">
-                Lorem ipsum
-            </div>
-        </div>
-    </div>
-@endsection
+    <h3>Este texto faz parte da view</h3>
+
+    {{-- renderizar o component --}}
+    <x-my-component />
+
+    {{-- renderizar component que existe dentro de subpasta --}}
+    <x-admin.admin-card />
+
+    <h3>Este texto faz parte da view home</h3>
+    @endsection
