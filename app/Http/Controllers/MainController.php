@@ -11,15 +11,15 @@ class MainController extends Controller
     public function showPage(): View
     {
         $data = [
-            'João' => [
+            'Carlos' => [
                 'Português',
                 'Inglês'
             ],
-            'Maria' => [
+            'Mario' => [
                 'Português',
                 'Espanhol'
             ],
-            'Ana' => [
+            'Carolina' => [
                 'Português',
                 'Inglês',
                 'Francês'
