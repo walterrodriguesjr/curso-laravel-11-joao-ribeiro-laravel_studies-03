@@ -6,21 +6,21 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class MyComponent extends Component
+class CardPessoa extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $message
-    )
-     {}
+        public string $nomePessoa,
+        public array $linguasPessoa
+    ) {}
 
     /**
      * Get the view / contents that represent the component.
      */
     public function render(): View|Closure|string
     {
-        return view('components.my-component');
+        return view('components.card-pessoa');
     }
 }
