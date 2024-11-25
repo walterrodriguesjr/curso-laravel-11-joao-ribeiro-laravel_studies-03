@@ -17,9 +17,8 @@ class MainController extends Controller
             ],
             'Mario' => [
                 'Português',
-                'Espanhol'
             ],
-            'Carolina' => [
+            'João' => [
                 'Português',
                 'Inglês',
                 'Francês'
