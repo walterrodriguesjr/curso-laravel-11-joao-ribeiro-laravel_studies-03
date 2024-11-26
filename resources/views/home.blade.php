@@ -8,10 +8,22 @@
     </div> --}}
 
     {{-- componentes e slots --}}
-    <div>
+    {{-- <div>
         <h4 class="text-info">Como funciona o slot</h4>
         <x-other-card>
             <h1 class="text-danger">Este é o slot!</h1>
         </x-other-card>
-    </div>
+    </div> --}}
+
+    <x-multi-slot>
+        <x-slot:title>Este é o título</x-slot:title>
+        <x-slot:content>Este é o conteúdo</x-slot:title>
+        <x-slot:footer>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </x-slot:title>
+    </x-multi-slot>
 @endsection
